@@ -221,7 +221,7 @@ export default class Carousel extends React.Component {
         };
 
         this.setState({
-          dragging: true
+          dragging: false
         });
       },
       onMouseMove: e => {
@@ -1069,7 +1069,7 @@ Carousel.defaultProps = {
   beforeSlide() {},
   cellAlign: 'left',
   cellSpacing: 0,
-  dragging: true,
+  dragging: false,
   easing: 'easeCircleOut',
   edgeEasing: 'easeElasticOut',
   framePadding: '0px',
